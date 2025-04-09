@@ -1,105 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+<!-- META ETIQUETAS SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitram: Soluciones tecnológicas avanzadas para la trazabilidad minera.">
+    <meta name="keywords" content="trazabilidad minera, tecnología minera, software minero, seguimiento minero, SITRAM">
+    <meta name="author" content="SiySi Sistemas informáticos y Servicios Integrados">
+    <meta name="robots" content="index, follow"> <!-- Permite a los motores de búsqueda indexar y seguir enlaces -->
+
+
 <!-- Open Graph para WhatsApp y redes sociales -->
 <meta property="og:title" content="SITRAM - Trazabilidad de Minerales">
 <meta property="og:description" content="Transparencia y legalidad en la comercialización de minerales.">
-<meta property="og:image" content="https://trazabilidadminerales.com//images/logositramwp.png">
+<meta property="og:image" content="https://trazabilidadminerales.com/images/logositramwp.png">
 <meta property="og:url" content="https://trazabilidadminerales.com/">
 <meta property="og:type" content="website">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
-<!--  -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+<!-- FAVICON Y TÍTULO -->
 <title>SITRAM</title>
 <link rel="icon" type="image/.png" href="images/sitramavatart.png">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+
+<!-- ESTILOS CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
 <link rel="stylesheet" type="text/css" href="style.css"/>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
-<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
 
 <!-- Fuente Titillium Web -->
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
-  <div class="container"> <a  href="#"> <img src="./images/logositrampeque.png" alt="logo" class="logo-1"> </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
+  <div class="container">
+    <a href="index.html">
+      <img src="./images/logositrampeque.png" alt="Logo de SITRAM" class="logo-1">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir menú de navegación">
+      <span class="fas fa-bars"></span>
+    </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0">INICIO</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">NOSOTROS</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">SERVICIOS</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">CONTACTO</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="https://app.trazabilidadminerales.com/">LOGIN</a> </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nosotros" data-scroll-nav="1" title="Ir a Inicio">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonios" data-scroll-nav="3" title="Conoce más sobre nosotros">TESTIMONIOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicios" data-scroll-nav="2" title="Nuestros Servicios">SERVICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto" data-scroll-nav="4" title="Contáctanos">CONTACTO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://app.trazabilidadminerales.com/" target="_blank" rel="noopener noreferrer" title="Iniciar sesión en la plataforma">LOGIN</a>
+
+        </li>
       </ul>
     </div>
+    
   </div>
 </nav>
-<!-- End Navbar --> 
+<!-- End Navbar -->
 
-<!-- Banner Image -->
 
-<div class="banner text-center" data-scroll-index='0'>
+<!-- Banner Principal -->
+<section id="inicio" class="banner text-center" data-scroll-index="0">
   <div class="banner-overlay">
     <div class="container">
-      <h1 class="text-capitalize">TRAZABILIDAD DE MINERALES</h1>
-      <p>Somos un Operador Tecnológico de Trazabilidad Minera, comprometidos con la transparencia, 
-        seguridad y eficiencia en cada etapa de la cadena productiva. Nuestra plataforma tecnológica garantiza el cumplimiento normativo y 
-        promueve una minería responsable, sostenible y trazable desde el origen hasta el destino final.</p>
+      <h1 class="text-capitalize">
+        Trazabilidad de Minerales: Tecnología y Transparencia en la Industria Minera
+      </h1>
+      
+      <p>
+        Somos un Operador Tecnológico de Trazabilidad Minera, comprometidos con la 
+        transparencia, seguridad y eficiencia
+        en cada etapa de la cadena productiva.
+      </p>
 
-      <p>tecnología, confianza y trazabilidad para transformar la industria de la minería. </p>
-      <a href="#" class="banner-btn">Saber Más</a> </div>
+      <p>
+        Nuestra plataforma tecnológica garantiza el cumplimiento normativo y promueve una 
+        minería responsable, sostenible y trazable desde el origen hasta el destino final.
+      </p>
+
+      <p><em>Tecnología, confianza y trazabilidad para transformar la industria minera.</em></p>
+
+      <a href="#servicios" class="banner-btn" title="Conoce la plataforma de trazabilidad minera">
+        Conoce más</a>
+    </div>
   </div>
-</div>
+</section>
+<!-- End Banner Principal -->
 
-<!-- End Banner Image --> 
 
 <!-- About -->
 
-<div class="about-us section-padding" data-scroll-index='1'>
+<div id="nosotros" class="about-us section-padding" data-scroll-index="1">
   <div class="container">
-    <div class="row">
+    <div class="row align-items-center"> <!-- Mantiene el texto y la imagen alineados en la misma fila -->
+
+      <!-- Título centrado -->
       <div class="col-md-12 section-title text-center">
-        <h3>Somos líderes en Tecnología de Trazabilidad Minera</h3>
-        <p>Te ayudamos a registrar todas tus transacciones de compra de minerales y reportarlos ante la Agencia Nacional de Minería.
-        </p>
-        <span class="section-title-line"></span> </div>
+        <h3>¿Qué es la trazabilidad de minerales?</h3>
+        
+      </div>
+
+      <!-- Columna del texto -->
       <div class="col-md-6 mb-50">
-        <div class="section-info">
+        <div class="section-info fade-in-text">
           <div class="sub-title-paragraph">
-            <h3>¿Qué es la trazabilidad de minerales?</h3>
-            <h4>Transparencia y confianza en cada transacción minera</h4>
-          </div> <div> <p>La trazabilidad de minerales es el registro digital de las transacciones de comercialización de minerales. 
-              Su objetivo es garantizar la <b>procedencia lícita</b>, facilitar el <b>seguimiento</b>  y mejorar el <b>control</b> 
+            <h4>Transparencia y confianza en cada transacción minera</h4><p>La trazabilidad de minerales es el registro digital de las transacciones de comercialización de minerales. 
+              Su objetivo es garantizar la <b>procedencia lícita</b>, facilitar el <b>seguimiento</b> y mejorar el <b>control</b> 
               sobre la comercialización de minerales en el territorio nacional.</p>
 
-              <p>Este proceso debe realizarse a través de una plataforma tecnológica autorizada, conforme a la 
-                Resolución 759 del 28 de octubre de 2024, y gestionada por un <b>Operador Tecnológico de Minerales.</b>
-              </p>
+            <p>Este proceso debe realizarse a través de una plataforma tecnológica autorizada, conforme a la 
+              Resolución 759 del 28 de octubre de 2024, y gestionada por un <b>Operador Tecnológico de Minerales.</b>
+            </p>
           </div>
-          <!--a href="#" class="anchor-btn">Learn more> <i class="fas fa-arrow-right pd-lt-10"></i></a--> </div>
+        </div>
       </div>
-      <div class="col-md-6 mb-50">
-        <div class="section-img"> <img src="images/ms.png" alt="" class="img-responsive"/> </div>
+
+      <!-- Columna de la imagen -->
+      <div class="col-md-6 mb-50 text-center">
+        <div class="section-img fade-in-img">
+          <img src="images/ms.png" alt="Minerales" class="img-fluid"/> 
+        </div>
       </div>
+
     </div>
   </div>
 </div>
+
 
 <!-- End About --> 
 
 <!-- Services -->
-<div class="services section-padding bg-grey" data-scroll-index='2'>
+<div id="servicios" class="services section-padding bg-grey" data-scroll-index="2">
   <div class="container">
     <div class="row">
       <div class="col-md-12 section-title text-center">
@@ -180,253 +229,211 @@
 <!-- End Services --> 
 
 
-<!-- Testimonials -->
-<div class="testimonials">
+<!-- Testimonios -->
+<section id="testimonios" class="testimonials" data-scroll-index="3">
   <div class="testimonials-overlay section-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-10 offset-md-1">
           <div class="owl-carousel owl-theme">
-            <div class="testimonial-item text-center">
-              <div class="icon"> <i class="fas fa-comments"></i> </div>
-              <p class="m-auto">Gracias a esta plataforma, hemos optimizado nuestros procesos y asegurado el cumplimiento normativo en 
-                cada transacción minera. La trazabilidad ahora es más eficiente y confiable.</p>
-              <div class="testimonial-author text-center">
+            
+            <!-- Testimonio 1 -->
+            <figure class="testimonial-item text-center">
+              <div class="testimonial-img">
+                <img src="images/Testimonio1.png" alt="Jairo Marín">
+              </div>
+              
+              <blockquote>
+                <p>
+                  Gracias a esta plataforma, hemos <strong>optimizado nuestros procesos</strong> y asegurado el 
+                  <strong>cumplimiento normativo</strong> en cada transacción minera. La <strong>trazabilidad</strong> 
+                  ahora es más eficiente y confiable.
+                </p>
+              </blockquote>
+              <figcaption class="testimonial-author">
                 <h5>Jairo Marín</h5>
-                <h6>Gerente de Proyecto</h6>
+                <p>Gerente de Proyecto</p>
+              </figcaption>
+            </figure>
+
+            <!-- Testimonio 2 -->
+            <figure class="testimonial-item text-center">
+              <div class="testimonial-img">
+                <img src="images/Testimonio2.png" alt="Ana García">
               </div>
-            </div>
-            <div class="testimonial-item text-center">
-              <div class="icon"> <i class="fas fa-comments"></i> </div>
-              <p class="m-auto">La implementación de esta tecnología nos ha permitido garantizar la legalidad de nuestros minerales, 
-                brindando mayor transparencia y confianza a nuestros clientes.</p>
-              <div class="testimonial-author text-center">
+              
+              <blockquote>
+                <p>
+                  La implementación de esta tecnología nos ha permitido garantizar la <strong>legalidad de nuestros minerales</strong>, 
+                  brindando mayor <strong>transparencia</strong> y confianza a nuestros clientes.
+                </p>
+              </blockquote>
+              <figcaption class="testimonial-author">
                 <h5>Ana García</h5>
-                <h6>Directora de Comercio y Regulación</h6>
+                <p>Directora de Comercio y Regulación</p>
+              </figcaption>
+            </figure>
+
+            <!-- Testimonio 3 -->
+            <figure class="testimonial-item text-center">
+              <div class="testimonial-img">
+                <img src="images/Testimonio3.png" alt="Juan Perez">
               </div>
-            </div>
-            <div class="testimonial-item text-center">
-              <div class="icon"> <i class="fas fa-comments"></i> </div>
-              <p class="m-auto">Desde que utilizamos esta plataforma, hemos reducido los riesgos operativos y mejorado la trazabilidad 
-                de nuestros minerales. Es una herramienta clave para el sector.</p>
-              <div class="testimonial-author text-center">
-                <h5>Juan Perez</h5>
-                <h6>Coordinador de Logística Minera</h6>
-              </div>
-            </div>
+              
+              <blockquote>
+                <p>
+                  Desde que utilizamos esta plataforma, hemos <strong>reducido los riesgos operativos</strong> y mejorado la 
+                  <strong>trazabilidad</strong> de nuestros minerales. Es una herramienta clave para el sector.
+                </p>
+              </blockquote>
+              <figcaption class="testimonial-author">
+                <h5>Juan Pérez</h5>
+                <p>Coordinador de Logística Minera</p>
+              </figcaption>
+            </figure>
+
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- End Testimonials --> 
+</section>
+<!-- End Testimonios -->
 
-<!-- Contact -->
-<div class="contact section-padding" data-scroll-index='4'>
+
+<!-- Contact Section -->
+<div id="contacto" class="contact section-padding" data-scroll-index="4">
   <div class="container">
     <div class="row">
+      <!-- Título de la sección -->
       <div class="col-md-12 section-title text-center">
         <h3>Contáctanos</h3>
         <p>Estamos aquí para ayudarte. Escríbenos y te asesoramos en cada paso.</p>
-        <span class="section-title-line"></span> </div>
+        <span class="section-title-line"></span>
+      </div>
+
+      <!-- Información de contacto -->
       <div class="col-lg-5 col-md-4">
         <div class="part-info">
           <div class="info-box">
-            <div class="icon"> <i class="fas fa-phone"></i> </div>
+            <div class="icon"> <i class="fas fa-phone" aria-hidden="true"></i> </div>
             <div class="content">
               <h4>Teléfono:</h4>
-              <p>(+57) 322 608 1062</p>
+              <p><a href="tel:+573226081062" title="Llamar a SITRAM">(+57) 322 608 1062</a></p>
             </div>
           </div>
           <div class="info-box">
-            <div class="icon"> <i class="fas fa-map-marker-alt"></i> </div>
+            <div class="icon"> <i class="fas fa-map-marker-alt" aria-hidden="true"></i> </div>
             <div class="content">
               <h4>Ubicación:</h4>
               <p>Medellín, Antioquia, Colombia</p>
             </div>
           </div>
           <div class="info-box">
-            <div class="icon"> <i class="fas fa-envelope"></i> </div>
+            <div class="icon"> <i class="fas fa-envelope" aria-hidden="true"></i> </div>
             <div class="content">
-              <h4>Mail :</h4>
-              <p><a href="/cdn-cgi/l/email-protection#cb98829f998a868bbfb9aab1aaa9a2a7a2afaaafa6a2a5aeb9aaa7aeb8e5a8a4a6f4b8bea9a1aea8bff688a4a5b8bea7bfaaeda9a4afb2f683a4a7aae7eef9fbbabea2b8a2aeb9aaeef9fba6086ab8eef9fba2a5ada4b9a6aaa8a20878a5e5">
-              <span class="__cf_email__" data-cfemail="a4f7edf0f6e5e9e4d0d6c5dec5c6cdc8cdc0c5c0c9cdcac1d6c5c8c1d78ac7cbc9">[email&#160;protected]</span></a></p>
+              <h4>Correo:</h4>
+              <p>
+                <a href="mailto:SITRAM@trazabilidadminerales.com?subject=Consulta&body=Hola,%20quisiera%20más%20información."
+                   title="Enviar correo a SITRAM">
+                  SITRAM@trazabilidadminerales.com
+                </a>
+              </p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Formulario de contacto -->
       <div class="col-lg-7 col-md-8">
         <div class="contact-form">
-          <form class='form' id='contact-form' method='post' data-toggle='validator'>
-            <input type='hidden' name='form-name' value='contact-form' />
+          <form class="form" id="contact-form" method="post" data-toggle="validator" novalidate>
+            <input type="hidden" name="form-name" value="contact-form" />
             <div class="messages"></div>
             <div class="controls">
               <div class="row">
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input id="form_name" type="text" name="name" placeholder="Nombre *" required data-error="name is required.">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input id="form_email" type="email" name="email" placeholder="Email *" required data-error="Valid email is required.">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input id="form_subject" type="text" name="subject" placeholder="Asunto">
-                  </div>
-                </div>
-                <div class="col-lg-12 form-group">
-                  <textarea id="form_message" name="message" class="form-control" placeholder=" Escribe tu mensaje " rows="4" required data-error="Please,leave us a message."></textarea>
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="col-lg-12 text-center">
-                  <button class="bttn">Enviar Mensaje</button>
-                </div>
+                
+                <div class="contact-form text-center">
+                  
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSffLB6lAua2tMGaRq5IZug22g6iK5DpVZ28daJNo29Zrf4NkA/viewform?embedded=true" 
+                          width="700px" height="1000px" frameborder="0" marginheight="0" marginwidth="0">
+                    
+                  </iframe>
+              </div>
+              
+
               </div>
             </div>
           </form>
         </div>
       </div>
+
+    
+<!-- End Contact Section -->
+
+
+
+<!-- Footer -->
+<footer class="footer-copy" aria-label="Pie de página">
+  <div class="container-fluid">
+  <div class="row no-gutters">
+    <div class="col-12 text-center">
+      <p> &copy; 2025 SITRAM – Plataforma confiable de trazabilidad minera. Diseñado por
+        <a href="http://www.sitrac.co/" target="_blank" rel="nofollow">SiySi.</a></p>
     </div>
   </div>
-</div>
-<!-- End Contact -->
-<footer class="footer-copy">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <p>2025 &copy; Website Diseñado por <a href="http://www.sitrac.co/" target="_blank" rel="dofollow">SiySi</a></p>
-      </div>
-    </div>
   </div>
 </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
-<!-- owl carousel js --> 
+
+
+<!-- Scripts -->
+<script src="js/jquery.scrollIt.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" 
+        crossorigin="anonymous"></script> 
+
+<!-- Plugins -->
 <script src="js/owl.carousel.min.js"></script> 
-<!-- magnific-popup --> 
 <script src="js/jquery.fancybox.min.js"></script> 
-
-<!-- scrollIt js --> 
-<script src="js/scrollIt.min.js"></script> 
-
-<!-- isotope.pkgd.min js --> 
 <script src="js/isotope.pkgd.min.js"></script> 
+<script src="js/Interactive.js"></script> 
+
+
+
+
 <script>
-  $(window).on("scroll",function () {
+  $(document).ready(function () {
+    
+    // Navbar scroll effect
+    function updateNavbar() {
+      var bodyScroll = $(window).scrollTop();
+      var navbar = $(".navbar");
+      var logo = $('.navbar-logo img');
 
-      var bodyScroll = $(window).scrollTop(),
-          navbar = $(".navbar");
-
-      if(bodyScroll > 130){
-
-          navbar.addClass("nav-scroll");
-          $('.navbar-logo img').attr('src','images/logo-black.png');
-
-
-      }else{
-
-          navbar.removeClass("nav-scroll");
-          $('.navbar-logo img').attr('src','images/logo-white.png');
-
+      if (bodyScroll > 130) {
+        navbar.addClass("nav-scroll");
+        logo.attr('src', 'images/logo-black.png');
+      } else {
+        navbar.removeClass("nav-scroll");
+        logo.attr('src', 'images/logo-white.png');
       }
-
-  });
-
-  $(window).on("load",function (){
-
-
-
-var bodyScroll = $(window).scrollTop(),
-navbar = $(".navbar");
-
-if(bodyScroll > 130){
-
-navbar.addClass("nav-scroll");
-$('.navbar-logo img').attr('src','images/logo-black.png');
-
-
-}else{
-
-navbar.removeClass("nav-scroll");
-$('.navbar-logo img').attr('src','images/logo-white.png');
-
-}
-
-/* smooth scroll
-  -------------------------------------------------------*/
-  $.scrollIt({
-
-easing: 'swing',      // the easing function for animation
-scrollTime: 900,       // how long (in ms) the animation takes
-activeClass: 'active', // class given to the active nav element
-onPageChange: null,    // function(pageIndex) that is called when page is changed
-topOffset: -63
-});
-
-/* isotope
--------------------------------------------------------*/
-var $gallery = $('.gallery').isotope({});
-$('.gallery').isotope({
-
-    // options
-    itemSelector: '.item-img',
-    transitionDuration: '0.5s',
-
-});
-
-
-$(".gallery .single-image").fancybox({
-  'transitionIn'  : 'elastic',
-  'transitionOut' : 'elastic',
-  'speedIn'   : 600,
-  'speedOut'    : 200,
-  'overlayShow' : false
-});
-
-
-/* filter items on button click
--------------------------------------------------------*/
-$('.filtering').on( 'click', 'button', function() {
-
-    var filterValue = $(this).attr('data-filter');
-
-    $gallery.isotope({ filter: filterValue });
-
-    });
-
-$('.filtering').on( 'click', 'button', function() {
-
-    $(this).addClass('active').siblings().removeClass('active');
-
-});
-
-})
-
-$(function () {
-$( ".cover-bg" ).each(function() {
-    var attr = $(this).attr('data-image-src');
-
-    if (typeof attr !== typeof undefined && attr !== false) {
-      $(this).css('background-image', 'url('+attr+')');
     }
 
-  });
+    $(window).on("scroll", updateNavbar);
+    updateNavbar();
 
-  /* sections background color from data background
-  -------------------------------------------------------*/
-  $("[data-background-color]").each(function() {
-      $(this).css("background-color", $(this).attr("data-background-color")  );
-  });
+    // Smooth scroll
+    $.scrollIt({
+      easing: 'swing',
+      scrollTime: 900,
+      activeClass: 'active',
+      topOffset: -63
+    });
 
 
-/* Owl Caroursel testimonial
-  -------------------------------------------------------*/
+    // Owl Carousel Testimonial
   
   $('.testimonials .owl-carousel').owlCarousel({
     loop:true,
@@ -440,6 +447,8 @@ $( ".cover-bg" ).each(function() {
 
 });
 
+
 </script>
 </body>
 </html>
+

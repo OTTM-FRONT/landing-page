@@ -1,3 +1,67 @@
+/* Efecto de Fade-In al cargar */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-text, .fade-in-img {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-text.visible, .fade-in-img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.fade-in-img {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    display: flex;
+    justify-content: center; /* Centra la imagen */
+}
+
+.fade-in-img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animación en botones */
+button, .btn {
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+	/* Efecto Hover en tarjetas o secciones */
+.card, .service-box {
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover, .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -50,7 +114,7 @@ span, a {
 h1, h2, h3, h4, h5, h6 {
 	color: #16403a;
 	font-weight: 600;
-	font-family: "Titilium", sans-serif;
+	font-family: "Titilium Web", sans-serif;
 	margin: 0;
 }
 p {
@@ -82,6 +146,41 @@ h4 {
 h6 {
 	font-weight: bold;
 }
+
+
+
+/* Navbar con cambio de color al hacer scroll */
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: rgba(5, 5, 5, 0.8);
+}
+
+/* Texto con animación de subrayado */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffcc00;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+
 .navbar {
 	position: fixed;
 	right: 0;
@@ -132,7 +231,7 @@ h6 {
 	transition: all .4s ease;
 }
 .nav-scroll .navbar-nav > li > a {
-	color: #16403a;
+	color: #395954;
 }
 .nav-scroll .navbar-brand img {
 	-webkit-transform: scale(1.03) !important;
@@ -275,22 +374,30 @@ h6 {
 	-webkit-box-shadow: 0px 5px 35px 0px rgba(22, 64, 58, 0.50);
 	box-shadow: 0px 5px 35px 0px rgba(22, 64, 58, 0.50);
 }
-/*.service-box .icon {
-}*/
-/*.service-box 
-.icon i {
-	font-size: 40px;
-	color: #16403a;
-}*/
+
 
 .icon img {
 	width: 80px; /* iconos de julieth */
 	height: auto;
   }
 
+  .testimonial-img {
+	aspect-ratio: 1 / 1;
+    width: 250px; /* Ajusta el tamaño según lo necesites */
+  height: 250px; /* Debe ser igual al width para mantener el círculo */
+  border-radius: 50%; /* Hace la imagen circular */
+  object-fit: cover; /* Asegura que la imagen se recorte correctamente y no se estire */
+  display: block;
+  margin: 0 auto; /* Centra la imagen */
+}
+  
+  .testimonials .testimonial-item p {
+	max-width: 700px;
+	color: #ffffff;
+	margin-bottom: 30px !important;
+	margin: 0 auto;
+}
 
-/*.icon-text {
-}*/
 
 
 .icon-text h4 {
@@ -324,16 +431,8 @@ h6 {
 .testimonials-overlay {
 	background: rgba(69,102,97,80%);
 }
-.testimonials .testimonial-item p {
-	max-width: 700px;
-	color: #ffffff;
-	margin-bottom: 30px !important;
-}
-.testimonials .icon i {
-	color: #dfd3c0;
-	font-size: 47px;
-	margin-bottom: 25px;
-}
+
+
 .testimonials h5 {
 	color:#dfd3c0;
 }
@@ -390,8 +489,21 @@ h6 {
 	color: #ffffff;
 	font-size: 13px;
 	text-align: center;
-	padding:7px 0px;
+	padding: 7px 0px;
+	width: 100vw;           /* Fuerza ancho igual al viewport */
+	margin-left: calc(-50vw + 50%); /* Compensa padding del container */
+  }
+
+.footer-copy .container-fluid {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
 }
+
+.footer-copy .row {
+    margin: 0;
+}
+
 @media all and (max-width:991px) {
 .navbar .navbar-collapse {
 	overflow: auto;
@@ -440,3 +552,10 @@ h6 {
 	padding: 150px 0px 100px;
 }
 }
+
+.navbar-nav .nav-link.active {
+	color: #f6c90e; /* Color de resaltado */
+	font-weight: 600;
+	border-bottom: 2px solid #f6c90e;
+  }
+  
