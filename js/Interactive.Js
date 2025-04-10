@@ -114,27 +114,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-// 8. Scroll
-$(function () {
-    $.scrollIt({
-      easing: 'swing',
-      scrollTime: 900,
-      activeClass: 'active',
-      topOffset: -63
-    });
-  });
-
-  // 8. Scroll con log en consola + ScrollSpy activo
-$(function () {
-    $.scrollIt({
-      easing: 'swing',
-      scrollTime: 900,
-      activeClass: 'active',
-      topOffset: -63,
-      onPageChange: function(index) {
-        console.log("Sección visible:", index);
-      }
-    });
   
     // Destacar visualmente la sección activa en el menú
     const navLinks = document.querySelectorAll('.nav-link[data-scroll-nav]');
@@ -157,5 +136,4 @@ $(function () {
         }
       });
     });
-  });
   
