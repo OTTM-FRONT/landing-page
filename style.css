@@ -26,18 +26,6 @@
     opacity: 1;
     transform: translateY(0);
 }
-.fade-in-img {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    display: flex;
-    justify-content: center; /* Centra la imagen */
-}
-
-.fade-in-img.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 /* Animación en botones */
 button, .btn {
