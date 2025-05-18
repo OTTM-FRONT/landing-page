@@ -1,0 +1,64 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px; /* Base font size */
+    color: #525252; /* gris-900 approx for body text */
+    background-color: #fbfbfb; /* gris-50 approx */
+}
+/* Applying line-height ratios approximately */
+p, li, .text-base {
+    line-height: 1.6; /* Ratio ~1.6 for body text */
+}
+h1, h2, h3, h4, h5, h6, .leading-title {
+    line-height: 1.3; /* Ratio ~1.3 for titles */
+    font-weight: 700; /* Bold titles */
+}
+h1 { font-size: 2.5rem; } /* ~40px */
+h2 { font-size: 2rem; } /* ~32px */
+h3 { font-size: 1.5rem; } /* ~24px */
+h4 { font-size: 1.25rem; } /* ~20px */
+
+/* Custom Colors (based on palette) - Use these in Tailwind classes */
+:root {
+    --verde-900: #001b18; /* Darkest Green */
+    --verde-700: #002d29; /* Dark Green */
+    --verde-600: #045a53; /* Medium Green */
+    --verde-500: #16403d; /* Slightly lighter green */
+    --verde-100: #b7d4c2; /* Light Green accent */
+    --verde-50: #e8eceb;  /* Very Light Green background */
+    --beige-100: #f3ece3; /* Light Beige background */
+    --beige-300: #e2dac8; /* Medium Beige accent */
+    --beige-800: #766c61; /* Dark Beige text/accent */
+    --gris-900: #525252;  /* Dark Gray for text */
+    --gris-700: #9b9b9b;  /* Medium Gray for text */
+    --gris-500: #dadada;  /* Light Gray borders/dividers */
+    --gris-200: #eeeeee;  /* Very Light Gray text/background */
+    --gris-100: #f4f4f4;  /* Lighter Gray background */
+    --gris-50: #fbfbfb;   /* Almost White background */
+    --blanco: #ffffff;
+}
+
+/* Animations */
+.feature-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+.cta-button {
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+/* Accessibility Focus Ring */
+*:focus-visible {
+    outline: 3px solid var(--verde-600);
+    outline-offset: 2px;
+}
+
+/* Whatsapp button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}

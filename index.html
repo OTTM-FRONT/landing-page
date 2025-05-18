@@ -1,472 +1,249 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<!-- META ETIQUETAS SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sitram: Soluciones tecnológicas avanzadas para la trazabilidad minera.">
-    <meta name="keywords" content="trazabilidad minera, tecnología minera, software minero, seguimiento minero, SITRAM">
-    <meta name="author" content="SiySi Sistemas informáticos y Servicios Integrados">
-    <meta name="robots" content="index, follow"> <!-- Permite a los motores de búsqueda indexar y seguir enlaces -->
+    <title>SITRAM: Trazabilidad de Minerales en Colombia | Cumplimiento Resolución 759 ANM</title>
+    <meta name="description" content="SITRAM, Operador Tecnológico (OTTM) autorizado por la ANM. Garantice la trazabilidad de minerales en Colombia y cumpla fácil con la Resolución 759 de 2024. Solución eficiente y segura.">
+    <meta name="keywords" content="trazabilidad de minerales, Colombia, SITRAM, Resolución 759, ANM, OTTM, Operador Tecnológico Trazabilidad Minera, cumplimiento normativo minero, software trazabilidad minerales, PTM, comercializadoras minerales, RUCOM">
+    <!-- Open Graph para WhatsApp y redes sociales -->
+    <meta property="og:title" content="SITRAM: Trazabilidad de Minerales en Colombia | Cumplimiento Resolución 759 ANM">
+    <meta property="og:description" content="Solución OTTM autorizada para la trazabilidad de minerales en Colombia. Cumpla fácil con la Resolución 759 de la ANM con SITRAM.">
+    <meta property="og:image" content="https://trazabilidadminerales.com/images/logositramwp.png"> 
+    <meta property="og:url" content="https://trazabilidadminerales.com/"> 
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
 
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
-<!-- Open Graph para WhatsApp y redes sociales -->
-<meta property="og:title" content="SITRAM - Trazabilidad de Minerales">
-<meta property="og:description" content="Transparencia y legalidad en la comercialización de minerales.">
-<meta property="og:image" content="https://trazabilidadminerales.com/images/logositramwp.png">
-<meta property="og:url" content="https://trazabilidadminerales.com/">
-<meta property="og:type" content="website">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
 
 <!-- FAVICON Y TÍTULO -->
 <title>SITRAM | Plataforma de Trazabilidad de Minerales en Colombia</title>
 
 <link rel="icon" type="image/.png" href="images/sitramavatart.png">
 
-
-<!-- ESTILOS CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
-integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-<link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
-<link rel="stylesheet" type="text/css" href="style.css"/>
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-<!-- Fuente Titillium Web -->
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<!--CSS-->
+<link rel="stylesheet" href="styles.css">
 
 
 </head>
 
-<body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a href="index.html">
-      <img src="./images/logositrampeque.png" alt="Logo de SITRAM" class="logo-1">
-    </a>
-    
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir menú de navegación">
-      <span class="fas fa-bars"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#nosotros" title="Ir a Inicio">INICIO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#testimonios" title="Conoce más sobre nosotros">TESTIMONIOS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#servicios" title="Nuestros Servicios">SERVICIO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contacto" title="Contáctanos">CONTACTO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://app.trazabilidadminerales.com/" target="_blank" rel="noopener noreferrer" title="Iniciar sesión en la plataforma">LOGIN</a>
+<body class="bg-[var(--gris-50)] text-[var(--gris-900)]">
 
-        </li>
-      </ul>
-    </div>
-    
-  </div>
-</nav>
-<!-- End Navbar -->
-
-
-<!-- Banner Principal -->
-<section id="inicio" class="banner text-center" data-scroll-index="0">
-  <div class="banner-overlay">
-    <div class="container">
-      <h1 class="text-capitalize">
-        Trazabilidad de Minerales: Tecnología y Transparencia en la Industria Minera
-      </h1>
-      
-      <p>
-        Somos un Operador Tecnológico de Trazabilidad Minera, comprometidos con la 
-        transparencia, seguridad y eficiencia
-        en cada etapa de la cadena productiva.
-      </p>
-
-      <p>
-        Nuestra plataforma tecnológica garantiza el cumplimiento normativo y promueve una 
-        minería responsable, sostenible y trazable desde el origen hasta el destino final.
-      </p>
-
-      <p><em>Tecnología, confianza y trazabilidad para transformar la industria minera.</em></p>
-
-      <a href="#servicios" class="banner-btn" title="Conoce la plataforma de trazabilidad minera">
-        Conoce más</a>
-    </div>
-  </div>
-</section>
-<!-- End Banner Principal -->
-
-
-<!-- About -->
-
-<div id="nosotros" class="about-us section-padding">
-  <div class="container">
-    <div class="row align-items-center"> <!-- Mantiene el texto y la imagen alineados en la misma fila -->
-
-      <!-- Título centrado -->
-      <div class="col-md-12 section-title text-center">
-        <h3>¿Qué es la trazabilidad de minerales?</h3>
-        
-      </div>
-
-      <!-- Columna del texto -->
-      <div class="col-md-6 mb-50">
-        <div class="section-info fade-in-text visible">
-          <div class="sub-title-paragraph">
-            <h4>Transparencia y confianza en cada transacción minera</h4><p>La trazabilidad de minerales es el registro digital de las transacciones de comercialización de minerales. 
-              Su objetivo es garantizar la <b>procedencia lícita</b>, facilitar el <b>seguimiento</b> y mejorar el <b>control</b> 
-              sobre la comercialización de minerales en el territorio nacional.</p>
-
-            <p>Este proceso debe realizarse a través de una plataforma tecnológica autorizada, conforme a la 
-              Resolución 759 del 28 de octubre de 2024, y gestionada por un <b>Operador Tecnológico de Minerales.</b>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Columna de la imagen -->
-      <div class="col-md-6 mb-50 text-center">
-        <div class="section-img fade-in-img visible">
-          <img src="images/ms.png" alt="Minerales" class="img-fluid"/> 
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-<!-- End About --> 
-
-<!-- Services -->
-<div id="servicios" class="services section-padding bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 section-title text-center">
-        <h3>Solución tecnológica para una trazabilidad minera segura</h3>
-        <p>Optimiza, controla y asegura cada transacción minera con nuestra plataforma certificada.</p>
-        <p>Con nosotros podrás:</p>
-        <span class="section-title-line"></span> </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
-        <div class="service-box bg-white text-center">
-          <div class="icon"> 
-            <img src="images/I_Reg_Compras.png" alt="icono registro compras" class="img-responsive"/>
-          </div>
-          <div class="icon-text">
-            <h4 class="title-box">Registro de Compras</h4>
-            <p>Registrar y reversar transacciones de compra de minerales.</p>
-          </div>
-        </div>
-      </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
-    <div class="service-box bg-white text-center">
-          <div class="icon"> 
-            <img src="images/I_Transformaciones.png" alt="icono transformaciones" class="img-responsive"/> 
-          </div>
-          <div class="icon-text">
-            <h4 class="title-box">Transformaciones</h4>
-            <p>Registrar y revertir transformaciones y mermas de minerales.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
-        <div class="service-box bg-white text-center">
-          <div class="icon"> 
-            <img src="images/I_Exportaciones.png" alt="icono exportaciones" class="img-responsive"/> 
-          </div>
-          <div class="icon-text">
-            <h4 class="title-box">Exportaciones</h4>
-            <p>Gestionar cierres por exportación o consumo interno.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
-        <div class="service-box bg-white text-center">
-          <div class="icon"> 
-            <img src="images/I_Compras.png" alt="icono compras" class="img-responsive"/> 
-          </div>
-          <div class="icon-text">
-            <h4 class="title-box">Compras</h4>
-            <p>Podrá comerciar con Títulos Mineros, Comercializadoras y Mineros de Subsistencia.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
-        <div class="service-box bg-white text-center">
-          <div class="icon"> 
-            <img src="images/I_Comunica.png" alt="icono comunicación" class="img-responsive"/>
-          </div>
-          <div class="icon-text">
-            <h4 class="title-box">Comunicación</h4>
-            <p>Contarás con servicio de soporte 24/7 y un sistema anti errores.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
-        <div class="service-box bg-white text-center">
-          <div class="icon"> 
-            <img src="images/I_Dise.png" alt="icono diseño" class="img-responsive"/>
-          </div>
-          <div class="icon-text">
-            <h4 class="title-box">Diseño Fácil</h4>
-            <p>Nuestra plataforma se encarga de todo el proceso y es muy fácil de usar.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- End Services --> 
-
-
-<!-- Testimonios -->
-<section id="testimonios" class="testimonials">
-  <div class="testimonials-overlay section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 offset-md-1">
-          <div class="owl-carousel owl-theme">
-            
-            <!-- Testimonio 1 -->
-            <figure class="testimonial-item text-center">
-              <div class="testimonial-img">
-                <img src="images/Testimonio1.png" alt="Jairo Marín">
-              </div>
-              
-              <blockquote>
-                <p>
-                  Gracias a esta plataforma, hemos <strong>optimizado nuestros procesos</strong> y asegurado el 
-                  <strong>cumplimiento normativo</strong> en cada transacción minera. La <strong>trazabilidad</strong> 
-                  ahora es más eficiente y confiable.
-                </p>
-              </blockquote>
-              <figcaption class="testimonial-author">
-                <h5>Jairo Marín</h5>
-                <p>Gerente de Proyecto</p>
-              </figcaption>
-            </figure>
-
-            <!-- Testimonio 2 -->
-            <figure class="testimonial-item text-center">
-              <div class="testimonial-img">
-                <img src="images/Testimonio2.png" alt="Ana García">
-              </div>
-              
-              <blockquote>
-                <p>
-                  La implementación de esta tecnología nos ha permitido garantizar la <strong>legalidad de nuestros minerales</strong>, 
-                  brindando mayor <strong>transparencia</strong> y confianza a nuestros clientes.
-                </p>
-              </blockquote>
-              <figcaption class="testimonial-author">
-                <h5>Ana García</h5>
-                <p>Directora de Comercio y Regulación</p>
-              </figcaption>
-            </figure>
-
-            <!-- Testimonio 3 -->
-            <figure class="testimonial-item text-center">
-              <div class="testimonial-img">
-                <img src="images/Testimonio3.png" alt="Juan Perez">
-              </div>
-              
-              <blockquote>
-                <p>
-                  Desde que utilizamos esta plataforma, hemos <strong>reducido los riesgos operativos</strong> y mejorado la 
-                  <strong>trazabilidad</strong> de nuestros minerales. Es una herramienta clave para el sector.
-                </p>
-              </blockquote>
-              <figcaption class="testimonial-author">
-                <h5>Juan Pérez</h5>
-                <p>Coordinador de Logística Minera</p>
-              </figcaption>
-            </figure>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Testimonios -->
-
-
-<!-- Contact Section -->
-<div id="contacto" class="contact section-padding">
-  <div class="container">
-    <div class="row">
-      <!-- Título de la sección -->
-      <div class="col-md-12 section-title text-center">
-        <h3>Contáctanos</h3>
-        <p>Estamos aquí para ayudarte. Escríbenos y te asesoramos en cada paso.</p>
-        <span class="section-title-line"></span>
-      </div>
-
-      <!-- Información de contacto -->
-      <div class="col-lg-5 col-md-4">
-        <div class="part-info">
-          <div class="info-box">
-            <div class="icon"> <i class="fas fa-phone" aria-hidden="true"></i> </div>
-            <div class="content">
-              <h4>Teléfono:</h4>
-              <p><a href="tel:+573226081062" title="Llamar a SITRAM">(+57) 322 608 1062</a></p>
+    <header class="bg-[var(--blanco)] shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="./images/logositrampeque.png" alt="Logo SITRAM - Trazabilidad Minera Colombia" class="h-10 w-auto mr-3">
+                <span class="text-sm text-[var(--gris-700)] hidden sm:inline">Operador Tecnológico Autorizado ANM</span> </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#inicio" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Inicio</a>
+                <a href="#solucion" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Nuestra Solución</a>
+                <a href="#beneficios" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Beneficios</a>
+                <a href="#cumplimiento" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Cumplimiento Normativo</a> <a href="https://wa.me/+573006470220" target="_blank" class="bg-[var(--verde-600)] hover:bg-[var(--verde-700)] text-[var(--blanco)] font-semibold py-2 px-4 rounded-lg shadow cta-button">Solicitar Demo</a>
             </div>
-          </div>
-          <div class="info-box">
-            <div class="icon"> <i class="fas fa-map-marker-alt" aria-hidden="true"></i> </div>
-            <div class="content">
-              <h4>Ubicación:</h4>
-              <p>Medellín, Antioquia, Colombia</p>
+            <div class="md:hidden">
+                <button class="text-[var(--gris-700)] focus:outline-none" aria-label="Abrir menú">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
             </div>
-          </div>
-          <div class="info-box">
-            <div class="icon"> <i class="fas fa-envelope" aria-hidden="true"></i> </div>
-            <div class="content">
-              <h4>Correo:</h4>
-              <p>
-                <a href="mailto:SITRAM@trazabilidadminerales.com?subject=Consulta&body=Hola,%20quisiera%20más%20información."
-                   title="Enviar correo a SITRAM">
-                  SITRAM@trazabilidadminerales.com
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        </nav>
+         <div class="container mx-auto px-6 pb-2 text-left sm:hidden">
+             <span class="text-xs text-[var(--gris-700)]">Operador Tecnológico Autorizado ANM</span> </div>
+    </header>
 
-      <!-- Formulario de contacto -->
-      <div class="col-lg-7 col-md-8">
-        <div class="contact-form">
-          <form class="form" id="contact-form" method="post" data-toggle="validator" novalidate>
-            <input type="hidden" name="form-name" value="contact-form" />
-            <div class="messages"></div>
-            <div class="controls">
-              <div class="row">
-                
-                <div class="contact-form text-center">
-                  <div class="form-container" style="position: relative; min-height: 1000px;">
-                    <div class="form-loading" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                      <div class="spinner-border text-primary" role="status">
-                        <span class="sr-only">Loading...</span>
-                      </div>
-                    </div>
-                    <iframe 
-                      src="https://docs.google.com/forms/d/e/1FAIpQLSffLB6lAua2tMGaRq5IZug22g6iK5DpVZ28daJNo29Zrf4NkA/viewform?embedded=true" 
-                      width="100%" 
-                      height="1000" 
-                      frameborder="0" 
-                      marginheight="0" 
-                      marginwidth="0"
-                      loading="lazy"
-                      title="Contact Form"
-                      onload="this.parentElement.querySelector('.form-loading').style.display='none'"
-                      style="opacity: 0; transition: opacity 0.3s ease-in-out;"
-                      onload="this.style.opacity='1'">
-                    </iframe>
-                  </div>
+    <section id="inicio" class="bg-gradient-to-r from-[var(--verde-700)] to-[var(--verde-500)] text-[var(--blanco)] py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-title">Garantice la Trazabilidad de sus Minerales en Colombia</h1>
+            <p class="text-lg md:text-xl lg:text-2xl mb-8 font-normal">Cumpla con la <span class="font-semibold">Resolución 759 de 2024</span> de forma eficiente, segura y transparente con SITRAM, su <span class="font-semibold">Operador Tecnológico de Trazabilidad Minera (OTTM)</span> autorizado por la ANM.</p>
+            <a href="#contacto"  class="bg-[var(--blanco)] text-[var(--verde-700)] font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-[var(--gris-100)] cta-button text-lg">SITRAM Facilita el Cumplimiento</a> </div>
+    </section>
+
+    <section id="solucion" class="py-16 md:py-24 bg-[var(--blanco)]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                 <h2 class="text-3xl md:text-4xl font-bold text-[var(--verde-700)] mb-4 leading-title">La Nueva Era de la Trazabilidad Minera: Resolución 759 ANM</h2>
+                <p class="text-lg text-[var(--gris-700)] max-w-3xl mx-auto">La <span class="font-semibold">Resolución 759 de 2024</span> y la Plataforma de Trazabilidad de Minerales (PTM) de la ANM exigen un nuevo nivel de control y transparencia. El incumplimiento de la trazabilidad conlleva riesgos significativos para las comercializadoras.</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="md:w-1/2">
+                     <img src="images/PTM.png" alt="Ilustración del desafío regulatorio de trazabilidad de minerales en Colombia" class="rounded-lg shadow-lg w-full">
                 </div>
-              
-
-              </div>
+                <div class="md:w-1/2">
+                     <h3 class="text-2xl font-semibold text-[var(--verde-700)] mb-3 leading-title">SITRAM: Su Aliado OTTM para el Cumplimiento Minero</h3>
+                    <p class="text-[var(--gris-700)] mb-4">Somos un <span class="font-semibold text-[var(--verde-600)]">Operador Tecnológico de Trazabilidad Minera (OTTM)</span> autorizado por la Agencia Nacional de Minería, diseñado específicamente para ayudar a las comercializadoras a navegar la complejidad de la Resolución 759.</p>
+                    <p class="text-[var(--gris-700)] mb-4">Nuestra plataforma de trazabilidad robusta y fácil de usar se integra con la PTM, asegurando el registro preciso y oportuno de cada transacción minera, desde el origen hasta el destino final.</p>
+                    <ul class="list-disc list-inside text-[var(--gris-700)] space-y-2">
+                        <li><span class="font-medium text-[var(--gris-900)]">Simplifique</span> sus procesos de registro de trazabilidad.</li>
+                        <li><span class="font-medium text-[var(--gris-900)]">Mitigue</span> riesgos de incumplimiento y sanciones de la ANM.</li>
+                        <li><span class="font-medium text-[var(--gris-900)]">Opere</span> su comercializadora de minerales con total confianza y seguridad.</li>
+                    </ul>
+                </div>
             </div>
-          </form>
         </div>
-      </div>
+    </section>
 
-    
-<!-- End Contact Section -->
+    <section class="py-16 md:py-24 bg-[var(--gris-100)]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                 <h2 class="text-3xl md:text-4xl font-bold text-[var(--verde-700)] mb-4 leading-title">Funcionalidades Clave del Software de Trazabilidad SITRAM</h2>
+                <p class="text-lg text-[var(--gris-700)] max-w-3xl mx-auto">Una solución integral diseñada para la eficiencia y la seguridad en la trazabilidad de minerales conforme a la normativa colombiana.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-[var(--blanco)] p-6 rounded-lg shadow-md feature-card">
+                    <div class="flex items-center mb-4">
+                        <img src="images/cumple.png" ALT="SITRAM 759" class="h-10 w-auto mr-3">
+                         <h4 class="text-xl font-semibold text-[var(--verde-700)] leading-title">Cumplimiento Resolución 759</h4>
+                    </div>
+                    <p class="text-[var(--gris-700)]">Asegure la conformidad con la Resolución 759 y el Anexo Técnico. Nuestra plataforma está siempre actualizada con los requerimientos de la ANM para OTTM.</p>
+                </div>
+                <div class="bg-[var(--blanco)] p-6 rounded-lg shadow-md feature-card">
+                    <div class="flex items-center mb-4">
+                        <img src="./images/trazabilidad.png" alt="SITRAM - Trazabilidad" class="h-10 w-auto mr-3">
+                         
+                         <h4 class="text-xl font-semibold text-[var(--verde-700)] leading-title">Trazabilidad Mineral en Tiempo Real</h4>
+                    </div>
+                    <p class="text-[var(--gris-700)]">Registre y consulte el historial completo de sus minerales, desde la extracción hasta la comercialización final, de manera fácil y rápida a través de nuestra plataforma.</p>
+                </div>
+                <div class="bg-[var(--blanco)] p-6 rounded-lg shadow-md feature-card">
+                    <div class="flex items-center mb-4">
+                        <img src="./images/informe.png" alt="SITRAM - informes" class="h-10 w-auto mr-3">
+                        
+                         <h4 class="text-xl font-semibold text-[var(--verde-700)] leading-title">Reportes y Análisis para ANM</h4>
+                    </div>
+                    <p class="text-[var(--gris-700)]">Genere informes detallados para auditorías internas, requerimientos de la ANM y toma de decisiones estratégicas basadas en datos de trazabilidad confiables.</p>
+                </div>
+                <div class="bg-[var(--blanco)] p-6 rounded-lg shadow-md feature-card">
+                    <div class="flex items-center mb-4">
+                        <img src="./images/I_Reg_Compras.png" alt="Logo SITRAM - seguridad" class="h-10 w-auto mr-3">
+                         
+                         <h4 class="text-xl font-semibold text-[var(--verde-700)] leading-title">Máxima Seguridad de Datos</h4>
+                    </div>
+                    <p class="text-[var(--gris-700)]">Protegemos su información minera con los más altos estándares de seguridad, garantizando la confidencialidad e integridad de sus datos de trazabilidad.</p>
+                </div>
+                 <div class="bg-[var(--blanco)] p-6 rounded-lg shadow-md feature-card">
+                    <div class="flex items-center mb-4">
+                        <img src="./images/I_Dise.png" alt="SITRAM - PTM" class="h-10 w-auto mr-3">
+                         <h4 class="text-xl font-semibold text-[var(--verde-700)] leading-title">Integración Eficiente con PTM</h4>
+                    </div>
+                    <p class="text-[var(--gris-700)]">Nuestra plataforma se comunica de forma fluida con la Plataforma de Trazabilidad de Minerales (PTM) de la ANM, asegurando una transmisión de datos correcta.</p>
+                </div>
+                 <div class="bg-[var(--blanco)] p-6 rounded-lg shadow-md feature-card">
+                    <div class="flex items-center mb-4">
+                        <img src="./images/I_Comunica.png" alt="SITRAM - Trazabilidad Minera Colombia" class="h-10 w-auto mr-3">
+                         <h4 class="text-xl font-semibold text-[var(--verde-700)] leading-title">Soporte Experto en Trazabilidad</h4>
+                    </div>
+                    <p class="text-[var(--gris-700)]">Contamos con un equipo dedicado para brindarle asistencia técnica y funcional en la implementación y uso de la plataforma de trazabilidad SITRAM.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="py-16 md:py-24 bg-[var(--blanco)]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                 <h2 class="text-3xl md:text-4xl font-bold text-[var(--verde-700)] mb-4 leading-title">Beneficios de SITRAM para su Comercializadora de Minerales</h2>
+                <p class="text-lg text-[var(--gris-700)] max-w-3xl mx-auto">Más allá del cumplimiento normativo, SITRAM impulsa la eficiencia y seguridad de su negocio minero en Colombia.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="p-6 border border-[var(--gris-200)] rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <svg class="w-12 h-12 text-[var(--verde-600)] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                     <h4 class="text-xl font-semibold text-[var(--verde-700)] mb-2 leading-title">Evite Sanciones ANM</h4>
+                    <p class="text-[var(--gris-700)]">Reduzca a cero el riesgo de multas o suspensión del RUCOM por incumplimiento de la normativa de trazabilidad minera.</p>
+                </div>
+                 <div class="p-6 border border-[var(--gris-200)] rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <svg class="w-12 h-12 text-[var(--verde-600)] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                     <h4 class="text-xl font-semibold text-[var(--verde-700)] mb-2 leading-title">Optimice Operaciones Mineras</h4>
+                    <p class="text-[var(--gris-700)]">Agilice el registro de información y reduzca la carga administrativa asociada a la trazabilidad de minerales exigida por la ANM.</p>
+                </div>
+                 <div class="p-6 border border-[var(--gris-200)] rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                     <svg class="w-12 h-12 text-[var(--verde-600)] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                     <h4 class="text-xl font-semibold text-[var(--verde-700)] mb-2 leading-title">Mejore su Reputación Sectorial</h4>
+                    <p class="text-[var(--gris-700)]">Demuestre su compromiso con la legalidad, la transparencia y las buenas prácticas del sector minero colombiano.</p>
+                </div>
+                 <div class="p-6 border border-[var(--gris-200)] rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <svg class="w-12 h-12 text-[var(--verde-600)] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1.563-2.495 2.753-3.571m13.497 3.571a13.916 13.916 0 00-3.44-2.04M3.757 6.844A21.88 21.88 0 006.829 17M12 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                     <h4 class="text-xl font-semibold text-[var(--verde-700)] mb-2 leading-title">Tome Decisiones Informadas</h4>
+
+                    <p class="text-[var(--gris-700)]">Acceda a datos precisos sobre su cadena de suministro mineral para una mejor gestión y planificación estratégica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section id="cumplimiento" class="py-16 md:py-24 bg-[var(--beige-100)]">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+             <div class="md:w-1/2">
+                 <h2 class="text-3xl font-bold text-[var(--verde-700)] mb-4 leading-title">Compromiso Total con la Normativa Minera Colombiana</h2>
+                <p class="text-[var(--beige-800)] mb-4 text-lg">Entendemos la importancia crítica del cumplimiento normativo. SITRAM está diseñado en estricta conformidad con:</p>
+                <ul class="list-disc list-inside text-[var(--beige-800)] space-y-2 mb-6">
+                    <li><span class="font-semibold">Resolución 759 del 28 de Octubre de 2024:</span> Implementamos todos los requerimientos técnicos y funcionales para Operadores Tecnológicos (OTTM).</li>
+                    <li><span class="font-semibold">Decreto 2234 de 2023:</span> Alineados con las directrices generales de trazabilidad de minerales.</li>
+                    <li><span class="font-semibold">Plataforma de Trazabilidad de Minerales (PTM):</span> Garantizamos la interoperabilidad y el envío seguro de información a la ANM.</li>
+                </ul>
+                <p class="text-[var(--beige-800)] font-medium">Opere con la tranquilidad de saber que está utilizando una solución tecnológica de trazabilidad validada y conforme a la ley minera colombiana.</p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="images/ms.png" alt="Ilustración minera de subsistencia" class="block mx-auto rounded-lg shadow-lg w-auto">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-[var(--blanco)]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                 <h2 class="text-3xl md:text-4xl font-bold text-[var(--verde-700)] mb-4 leading-title">Lo que Dicen Nuestros Clientes sobre SITRAM</h2>
+                <p class="text-lg text-[var(--gris-700)] max-w-3xl mx-auto">La confianza y satisfacción de las comercializadoras de minerales que usan SITRAM para su trazabilidad.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-[var(--gris-100)] p-6 rounded-lg shadow-sm border-l-4 border-[var(--verde-500)]">
+                    <blockquote class="text-[var(--gris-700)] italic mb-4">"Implementar SITRAM fue clave para adaptarnos a la nueva normativa de trazabilidad. Redujimos significativamente los riesgos operativos y mejoramos nuestra gestión. El soporte ha sido excelente."</blockquote>
+                    <p class="font-semibold text-[var(--verde-700)]">- Gerente de Comercializadora Minera (Confidencial)</p>
+                </div>
+                 <div class="bg-[var(--gris-100)] p-6 rounded-lg shadow-sm border-l-4 border-[var(--verde-500)]">
+                    <blockquote class="text-[var(--gris-700)] italic mb-4">"La plataforma SITRAM es intuitiva y nos ahorra mucho tiempo en el registro de trazabilidad. Nos da la seguridad que necesitamos para operar tranquilamente frente a la ANM."</blockquote>
+                    <p class="font-semibold text-[var(--verde-700)]">- Encargado de Trazabilidad (Empresa Minera Confidencial)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20 md:py-32 bg-gradient-to-r from-[var(--verde-700)] to-[var(--verde-500)] text-[var(--blanco)]">
+        <div class="container mx-auto px-6 text-center">
+             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-title">Simplifique su Trazabilidad Mineral y Asegure el Cumplimiento con SITRAM</h2>
+            <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto font-normal">Permítanos mostrarle cómo SITRAM puede transformar su gestión de trazabilidad mineral en Colombia. Solicite una demostración personalizada o contáctenos para resolver sus dudas sobre la Resolución 759.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                 <a href="https://wa.me/+573006470220" target="_blank" class="bg-[var(--blanco)] text-[var(--verde-700)] font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-[var(--gris-100)] cta-button text-lg">Solicitar Demostración Gratuita de SITRAM</a> <a href="https://wa.me/+573006470220" target="_blank" class="bg-transparent border-2 border-[var(--blanco)] text-[var(--blanco)] font-bold py-3 px-8 rounded-lg hover:bg-[var(--blanco)] hover:text-[var(--verde-700)] transition duration-300 cta-button text-lg">Hablar con un Asesor Experto</a> </div>
+             </div>
+    </section>
+
+    <footer class="bg-[var(--verde-900)] text-[var(--gris-200)] py-10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-4 flex flex-col items-center">
+                 <img src="images/sitram neutro.png" alt="Logo SITRAM Footer" class="h-20 w-auto mb-2">
+                 <p class="text-sm text-[var(--verde-100)] mt-1">Operador Tecnológico de Trazabilidad Minera (OTTM)</p>
+            </div>
+            <div class="mb-4 space-x-4">
+                <a href="https://trazabilidadminerales.com/pprivacidad.html" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Política de Privacidad</a>
+                <span class="text-[var(--verde-500)]">|</span> <a href="#" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Términos de Servicio</a>
+                 <span class="text-[var(--verde-500)]">|</span>
+                <a href="mailto:gerencia@alexisrojasm.com" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Contacto SITRAM</a>
 
 
-
-<!-- Footer -->
-<footer class="footer-copy" aria-label="Pie de página">
-  <div class="container-fluid">
-  <div class="row no-gutters">
-    <div class="col-12 text-center">
-      <p> &copy; 2025 SITRAM – Plataforma confiable de trazabilidad minera. Diseñado por
-        <a href="http://www.sitrac.co/" target="_blank" rel="nofollow">SiySi.</a></p>
-    </div>
-  </div>
-  </div>
-</footer>
-
-
-<!-- Scripts -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
-        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" 
-        crossorigin="anonymous"></script> 
-
-<!-- Plugins -->
-<script src="https://cdn.jsdelivr.net/npm/scrollit@1.0.5/scrollIt.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-
-
-
-
-<script>
-  $(document).ready(function () {
-    
-    // Navbar scroll effect
-    function updateNavbar() {
-      var bodyScroll = $(window).scrollTop();
-      var navbar = $(".navbar");
-      var logo = $('.navbar-logo img');
-
-      if (bodyScroll > 130) {
-        navbar.addClass("nav-scroll");
-        logo.attr('src', 'images/logo-black.png');
-      } else {
-        navbar.removeClass("nav-scroll");
-        logo.attr('src', 'images/logo-white.png');
-      }
-    }
-
-    $(window).on("scroll", updateNavbar);
-    updateNavbar();
-
-    // Smooth scroll
-    $.scrollIt({
-      easing: 'swing',
-      scrollTime: 900,
-      activeClass: 'active',
-      topOffset: -63
-    });
-
-
-    // Owl Carousel Testimonial
-  
-  $('.testimonials .owl-carousel').owlCarousel({
-    loop:true,
-    autoplay:true,
-    items:1,
-    margin:30,
-    dots: true,
-    nav: false,
-    
-  });
-
-});
-
-
-</script>
+            </div>
+            <p class="text-sm text-[var(--gris-500)]">&copy; 2025 SITRAM Colombia. Software de Trazabilidad de Minerales. Todos los derechos reservados.</p>
+             <p class="text-xs text-[var(--gris-700)] mt-2">Autorizado por la Agencia Nacional de Minería (ANM) como OTTM.</p>
+        </div>
+    </footer>
+<a href="https://wa.me/+573006470220" target="_blank" class="whatsapp-button">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2048px-WhatsApp.svg.png" alt="WhatsApp" width="50" height="50">
+</a>
 </body>
 </html>
-
