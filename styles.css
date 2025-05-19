@@ -62,3 +62,60 @@ h4 { font-size: 1.25rem; } /* ~20px */
     right: 20px;
     z-index: 1000;
 }
+
+/* menu hiden */
+
+
+#mobile-menu-items {
+    position: absolute; /* Asegura que no interfiera con otros elementos */
+    top: 100%; /* Coloca el menú debajo del botón */
+    left: 0;
+    width: 100%;
+    background-color: var(--blanco);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    overflow: hidden;
+    max-height: 0; /* Inicialmente oculto */
+    transition: max-height 0.3s ease-in-out; /* Animación suave */
+    display: none; /* Importante: Oculta el menú inicialmente */
+}
+
+#mobile-menu-items.hidden {
+    display: none; /* Asegura que esté oculto */
+}
+
+#mobile-menu-items.open {
+    display: block; /* Muestra el menú */
+    max-height: 600px; /* Altura máxima del menú */
+}
+
+.open-icon {
+    display: block; /* Muestra el icono de hamburguesa */
+}
+
+.close-icon {
+    display: none; /* Oculta el icono de cerrar */
+}
+
+.close-icon.active {
+    display: block; /* Muestra el icono de cerrar cuando está activo */
+}
+
+/* Media Query para móvil (importante) */
+@media (max-width: 767px) {
+    #mobile-menu-items {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--blanco);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        display: none; /* Oculta el menú inicialmente */
+    }
+}

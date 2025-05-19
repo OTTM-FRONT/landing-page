@@ -31,32 +31,45 @@
 <!--CSS-->
 <link rel="stylesheet" href="styles.css">
 
-
+<script src="javas.js"></script>
 </head>
 
 
 <body class="bg-[var(--gris-50)] text-[var(--gris-900)]">
 
-    <header class="bg-[var(--blanco)] shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="./images/logositrampeque.png" alt="Logo SITRAM - Trazabilidad Minera Colombia" class="h-10 w-auto mr-3">
-                <span class="text-sm text-[var(--gris-700)] hidden sm:inline">Operador Tecnológico Autorizado ANM</span> </div>
-            <div class="hidden md:flex space-x-6 items-center">
-                <a href="#inicio" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Inicio</a>
-                <a href="#solucion" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Nuestra Solución</a>
-                <a href="#beneficios" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Beneficios</a>
-                <a href="#cumplimiento" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Cumplimiento Normativo</a> <a href="https://wa.me/+573006470220" target="_blank" class="bg-[var(--verde-600)] hover:bg-[var(--verde-700)] text-[var(--blanco)] font-semibold py-2 px-4 rounded-lg shadow cta-button">Solicitar Demo</a>
+   <header class="bg-[var(--blanco)] shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="./images/logositrampeque.png" alt="Logo SITRAM - Trazabilidad Minera Colombia" class="h-10 w-auto mr-3">
+            <span class="text-sm text-[var(--gris-700)] hidden sm:inline">Operador Tecnológico Autorizado ANM</span>
+        </div>
+        <div class="hidden md:flex space-x-6 items-center">
+            <a href="#inicio" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Inicio</a>
+            <a href="#solucion" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Nuestra Solución</a>
+            <a href="#beneficios" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Beneficios</a>
+            <a href="https://app.trazabilidadminerales.com/login" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">LOGIN</a>
+            <a href="https://wa.me/+573006470220" target="_blank" class="bg-[var(--verde-600)] hover:bg-[var(--verde-700)] text-[var(--blanco)] font-semibold py-2 px-4 rounded-lg shadow cta-button">Solicitar Demo</a>
+        </div>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-[var(--gris-700)] focus:outline-none" aria-label="Abrir menú" aria-expanded="false">
+                <svg id="open-icon" class="open-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg id="close-icon" class="close-icon hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div id="mobile-menu-items" class="hidden absolute top-full left-0 w-full bg-[var(--blanco)] shadow-lg rounded-b-md overflow-hidden transition-all duration-300" style="max-height: 0;">
+                <div class="py-2 px-4 flex flex-col space-y-2">
+                    <a href="#inicio" class="block py-2 text-[var(--gris-700)] hover:text-[var(--verde-600)] mobile-menu-link">Inicio</a>
+                    <a href="#solucion" class="block py-2 text-[var(--gris-700)] hover:text-[var(--verde-600)] mobile-menu-link">Nuestra Solución</a>
+                    <a href="#beneficios" class="block py-2 text-[var(--gris-700)] hover:text-[var(--verde-600)] mobile-menu-link">Beneficios</a>
+                    <a href="https://app.trazabilidadminerales.com" class="block py-2 text-[var(--gris-700)] hover:text-[var(--verde-600)] mobile-menu-link">LOGIN</a>
+                    <a href="https://wa.me/+573006470220" target="_blank" class="block py-2 bg-[var(--verde-600)] hover:bg-[var(--verde-700)] text-[var(--blanco)] font-semibold rounded-lg shadow cta-button text-center mobile-menu-link">Solicitar Demo</a>
+                </div>
             </div>
-            <div class="md:hidden">
-                <button class="text-[var(--gris-700)] focus:outline-none" aria-label="Abrir menú">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                </button>
-            </div>
-        </nav>
-         <div class="container mx-auto px-6 pb-2 text-left sm:hidden">
-             <span class="text-xs text-[var(--gris-700)]">Operador Tecnológico Autorizado ANM</span> </div>
-    </header>
+        </div>
+    </nav>
+    <div class="container mx-auto px-6 pb-2 text-left sm:hidden">
+        <span class="text-xs text-[var(--gris-700)]">Operador Tecnológico Autorizado ANM</span>
+    </div>
+</header>
 
     <section id="inicio" class="bg-gradient-to-r from-[var(--verde-700)] to-[var(--verde-500)] text-[var(--blanco)] py-20 md:py-32">
         <div class="container mx-auto px-6 text-center">
@@ -233,8 +246,8 @@
             <div class="mb-4 space-x-4">
                 <a href="https://trazabilidadminerales.com/pprivacidad.html" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Política de Privacidad</a>
                 <span class="text-[var(--verde-500)]">|</span> <a href="#" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Términos de Servicio</a>
-                 <span class="text-[var(--verde-500)]">|</span>
-                <a href="mailto:gerencia@alexisrojasm.com" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Contacto SITRAM</a>
+                 <span class="text-[var(--verde-500)]">|</span><p>
+                <a href="mailto:siysiottm@gmail.com" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Contacto SITRAM</a>, siysiottm@gmail.com</p>
 
 
             </div>
@@ -245,5 +258,6 @@
 <a href="https://wa.me/+573006470220" target="_blank" class="whatsapp-button">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2048px-WhatsApp.svg.png" alt="WhatsApp" width="50" height="50">
 </a>
+
 </body>
 </html>
