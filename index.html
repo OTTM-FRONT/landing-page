@@ -31,7 +31,7 @@
 <!--CSS-->
 <link rel="stylesheet" href="styles.css">
 
-<script src="javas.js"></script>
+
 </head>
 
 
@@ -47,7 +47,7 @@
             <a href="#inicio" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Inicio</a>
             <a href="#solucion" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Nuestra Solución</a>
             <a href="#beneficios" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Beneficios</a>
-            <a href="https://app.trazabilidadminerales.com/login" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">LOGIN</a>
+            <a href="https://app.trazabilidadminerales.com/#/login" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">LOGIN</a>
             <a href="https://wa.me/+573006470220" target="_blank" class="bg-[var(--verde-600)] hover:bg-[var(--verde-700)] text-[var(--blanco)] font-semibold py-2 px-4 rounded-lg shadow cta-button">Solicitar Demo</a>
         </div>
         <div class="md:hidden">
@@ -60,7 +60,7 @@
                     <a href="#inicio" class="block py-2 text-[var(--gris-700)] hover:text-[var(--verde-600)] mobile-menu-link">Inicio</a>
                     <a href="#solucion" class="block py-2 text-[var(--gris-700)] hover:text-[var(--verde-600)] mobile-menu-link">Nuestra Solución</a>
                     <a href="#beneficios" class="block py-2 text-[var(--gris-700)] hover:text-[var(--verde-600)] mobile-menu-link">Beneficios</a>
-                    <a href="https://app.trazabilidadminerales.com" class="block py-2 text-[var(--gris-700)] hover:text-[var(--verde-600)] mobile-menu-link">LOGIN</a>
+                    <a href="https://app.trazabilidadminerales.com/#/login" class="block py-2 text-[var(--gris-700)] hover:text-[var(--verde-600)] mobile-menu-link">LOGIN</a>
                     <a href="https://wa.me/+573006470220" target="_blank" class="block py-2 bg-[var(--verde-600)] hover:bg-[var(--verde-700)] text-[var(--blanco)] font-semibold rounded-lg shadow cta-button text-center mobile-menu-link">Solicitar Demo</a>
                 </div>
             </div>
@@ -75,7 +75,8 @@
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-title">Garantice la Trazabilidad de sus Minerales en Colombia</h1>
             <p class="text-lg md:text-xl lg:text-2xl mb-8 font-normal">Cumpla con la <span class="font-semibold">Resolución 759 de 2024</span> de forma eficiente, segura y transparente con SITRAM, su <span class="font-semibold">Operador Tecnológico de Trazabilidad Minera (OTTM)</span> autorizado por la ANM.</p>
-            <a href="#contacto"  class="bg-[var(--blanco)] text-[var(--verde-700)] font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-[var(--gris-100)] cta-button text-lg">SITRAM Facilita el Cumplimiento</a> </div>
+            <a href="#contacto"  class="bg-[var(--blanco)] text-[var(--verde-700)] font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-[var(--gris-100)] cta-button text-lg">SITRAM Facilita el Cumplimiento</a> 
+        </div>
     </section>
 
     <section id="solucion" class="py-16 md:py-24 bg-[var(--blanco)]">
@@ -237,6 +238,37 @@
              </div>
     </section>
 
+    <section class="py-16 md:py-24 bg-[var(--blanco)]">
+        <form id="contact-form" method="POST" class="bg-white p-6 rounded-xl shadow-lg max-w-2xl mx-auto">
+  <!-- Configuración FormSubmit -->
+  <input type="hidden" name="_subject" value="Contacto Web SITRAM">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="box">
+  <input type="hidden" name="_autoresponse" value="Gracias por contactarnos. Pronto te responderemos.">
+
+  <h2 class="text-2xl font-semibold text-[var(--verde-700)] mb-4 text-center">Contáctanos</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <input type="text" name="name" placeholder="Nombre completo *" required class="input-form">
+    <input type="email" name="email" placeholder="Correo electrónico *" required class="input-form">
+  </div>
+
+  <input type="text" name="subject" placeholder="Asunto" class="input-form mt-4">
+
+  <textarea name="message" rows="5" placeholder="Escribe tu mensaje *" required class="input-form mt-4 resize-none"></textarea>
+
+  <button type="submit" class="mt-6 w-full bg-[var(--verde-600)] hover:bg-[var(--verde-700)] text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 shadow-md">
+    Enviar Mensaje
+  </button>
+
+  <!-- Mensaje de éxito -->
+  <div id="mensaje-exito" class="mensaje-exito hidden">
+    Tu mensaje ha sido enviado con éxito.
+  </div>
+</form>
+
+    </section>
+
     <footer class="bg-[var(--verde-900)] text-[var(--gris-200)] py-10">
         <div class="container mx-auto px-6 text-center">
             <div class="mb-4 flex flex-col items-center">
@@ -244,20 +276,36 @@
                  <p class="text-sm text-[var(--verde-100)] mt-1">Operador Tecnológico de Trazabilidad Minera (OTTM)</p>
             </div>
             <div class="mb-4 space-x-4">
-                <a href="https://trazabilidadminerales.com/pprivacidad.html" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Política de Privacidad</a>
-                <span class="text-[var(--verde-500)]">|</span> <a href="#" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Términos de Servicio</a>
-                 <span class="text-[var(--verde-500)]">|</span><p>
-                <a href="mailto:siysiottm@gmail.com" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Contacto SITRAM</a>, siysiottm@gmail.com</p>
-
-
+                <a href="Pprivacidad.html" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Política de Privacidad</a>
+                <span class="text-[var(--verde-500)]">|</span> 
+                <a href="Terminosycondiciones.html" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Términos de Servicio</a>
+                <span class="text-[var(--verde-500)]">|</span>
+                <a href="PoliticaCookies.html" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Política de Cookies</a>
+                <p>
+                <a href="mailto:siysiottm@gmail.com" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Contacto SITRAM</a></p>
             </div>
             <p class="text-sm text-[var(--gris-500)]">&copy; 2025 SITRAM Colombia. Software de Trazabilidad de Minerales. Todos los derechos reservados.</p>
              <p class="text-xs text-[var(--gris-700)] mt-2">Autorizado por la Agencia Nacional de Minería (ANM) como OTTM.</p>
         </div>
     </footer>
+
 <a href="https://wa.me/+573006470220" target="_blank" class="whatsapp-button">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2048px-WhatsApp.svg.png" alt="WhatsApp" width="50" height="50">
 </a>
+<script src="javas.js"></script>
 
+<!-- Banner de Cookies -->
+<div id="cookie-banner" class="cookie-banner hidden">
+  <div class="cookie-content">
+    <p>
+      Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el uso del sitio web. Puedes aceptar todas, rechazar las no necesarias.
+      <br>Le recomendamos consultar nuestra <a href="#">Política de Cookies</a>, así como también nuestra  <a href="Pprivacidad.html">Política de Privacidad y Tratamiento de Datos personales </a> así como nuestros <a href="Terminosycondiciones.html">Términos y Condiciones del Servicio</a>
+    </p>
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="btn btn-accept">Aceptar todas</button>
+      <button id="reject-cookies" class="btn btn-reject">Rechazar</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITRAM: Trazabilidad de Minerales en Colombia | Cumplimiento Resolución 759 ANM</title>
+    <meta name="description" content="SITRAM, Operador Tecnológico (OTTM) autorizado por la ANM. Garantice la trazabilidad de minerales en Colombia y cumpla fácil con la Resolución 759 de 2024. Solución eficiente y segura.">
+    <meta name="keywords" content="trazabilidad de minerales, Colombia, SITRAM, Resolución 759, ANM, OTTM, Operador Tecnológico Trazabilidad Minera, cumplimiento normativo minero, software trazabilidad minerales, PTM, comercializadoras minerales, RUCOM">
+    
+
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+<!-- FAVICON Y TÍTULO -->
+<title>SITRAM | Plataforma de Trazabilidad de Minerales en Colombia</title>
+
+<link rel="icon" type="image/.png" href="images/sitramavatart.png">
+
+<!--CSS-->
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body class="bg-[var(--gris-50)] text-[var(--gris-900)]">
+
+ <header class="bg-[var(--blanco)] shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="./images/logositrampeque.png" alt="Logo SITRAM - Trazabilidad Minera Colombia" class="h-10 w-auto mr-3">
+            <span class="text-sm text-[var(--gris-700)] hidden sm:inline">Operador Tecnológico Autorizado ANM</span>
+        </div>
+        <div class="hidden md:flex space-x-6 items-center">
+            <a href="index.html" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Inicio</a>
+            <a href="Pprivacidad.html" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Políticas de Privacidad</a>
+            <a href="PoliticaCookies.html" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Políticas de Cookies</a>
+            <a href="https://app.trazabilidadminerales.com/#/login" class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">LOGIN</a>
+            <a href="https://wa.me/+573006470220" target="_blank" class="bg-[var(--verde-600)] hover:bg-[var(--verde-700)] text-[var(--blanco)] font-semibold py-2 px-4 rounded-lg shadow cta-button">Solicitar Demo</a>
+        </div>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-[var(--gris-700)] focus:outline-none" aria-label="Abrir menú" aria-expanded="false">
+                <svg id="open-icon" class="open-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg id="close-icon" class="close-icon hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div id="mobile-menu-items" class="hidden absolute top-full left-0 w-full bg-[var(--blanco)] shadow-lg rounded-b-md overflow-hidden transition-all duration-300" style="max-height: 0;">
+                <div class="py-2 px-4 flex flex-col space-y-2">
+                    <a href="index.html" class="block py-2 text-[var(--gris-700)] hover:text-[var(--verde-600)] mobile-menu-link">Inicio</a>
+                    <a href="Pprivacidad.html" class="block py-2 text-[var(--gris-700)] hover:text-[var(--verde-600)] mobile-menu-link">Políticas de Privacidad</a> 
+                    <a href="PoliticaCookies.html class="text-[var(--gris-700)] hover:text-[var(--verde-600)]">Políticas de Cookies</a>
+                    <a href="https://app.trazabilidadminerales.com/#/login" class="block py-2 text-[var(--gris-700)] hover:text-[var(--verde-600)] mobile-menu-link">LOGIN</a>
+                    <a href="https://wa.me/+573006470220" target="_blank" class="block py-2 bg-[var(--verde-600)] hover:bg-[var(--verde-700)] text-[var(--blanco)] font-semibold rounded-lg shadow cta-button text-center mobile-menu-link">Solicitar Demo</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto px-6 pb-2 text-left sm:hidden">
+        <span class="text-xs text-[var(--gris-700)]">Operador Tecnológico Autorizado ANM</span>
+    </div>
+</header>  
+
+
+<section id="inicio" class="bg-gradient-to-r from-[var(--verde-700)] to-[var(--verde-500)] text-[var(--blanco)] py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-title">Términos y Condiciones del Servicio SITRAM</h1>
+            <p class="text-lg md:text-xl lg:text-2xl mb-8 font-normal">Sistema de Trazabilidad de Minerales</p>
+            <a href="mailto:siysiottm@gmail.com"  class="bg-[var(--blanco)] text-[var(--verde-700)] font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-[var(--gris-100)] cta-button text-lg">Escríbenos</a> 
+        </div>
+    </section>
+
+
+ <main class="container mx-auto py-8 px-4">
+        
+ <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">1. Objeto</h2>
+        <p class="text-gray-700 mb-4">
+            El presente documento tiene por objeto regular, de manera integral y conforme a la normatividad colombiana vigente, el acceso, uso y contratación de los servicios ofrecidos a través de la Plataforma SITRAM (https://trazabilidadminerales.com), la empresa Sistemas Informáticos Y Servicios Integrados (SiySi ltda), en su calidad de Operador Tecnológico de Trazabilidad Minera habilitado por la Agencia Nacional de Minería. En este sentido, los presentes Términos y Condiciones (“Términos”) vinculan a todo Usuario, sea persona natural o jurídica, que acceda, navegue o utilice cualquiera de los módulos, funcionalidades o servicios de la Plataforma SITRAM, incluyendo el registro y emisión de Códigos Únicos de Origen (CUO), la gestión de saldos de minerales, la administración de expedientes y contratos, la generación de reportes estadísticos, la interoperabilidad con sistemas externos y el canal de Peticiones, Quejas y Reclamos (PQR), así como los servicios de soporte técnico, capacitación y mantenimiento técnico.
+        </p>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">2. Definiciones </h2>
+        <p class="text-gray-700 mb-4">
+            Para una correcta comprensión de estos Términos, se entenderá por: 
+        </p>
+        <ul class="list-disc list-inside text-gray-700 mb-4">
+            <li><strong>Usuario: </strong>Toda persona natural o jurídica que acceda o haga uso de la Plataforma SITRAM, incluso sin registro previo. </li>
+            <li><strong>CUO (Código Único de Origen): </strong>identificador alfanumérico que la PTM  asigna a cada producción de mineral.</li>
+            <li><strong>Actor Minero: </strong>titulares de concesiones, comercializadores, transportadores, exportadores, plantas de beneficio o mineros de subsistencia registrados en SITRAM.</li>
+            <li><strong>Datos Personales: </strong>Toda información vinculada o que pueda asociarse a una persona natural identificable.</li>
+            <li><strong>Servicio: </strong>Cada una de las funcionalidades y módulos operativos de la Plataforma, incluyendo el registro de trazabilidad, consulta de saldos, generación de contratos digitales, emisión de reportes y demás procesos automatizados. </li>
+            <li><strong>PQRS: </strong>Módulo habilitado para que el Usuario ejerza sus derechos de acceso, rectificación, supresión, limitación y oposición en materia de protección de datos.</li>
+            <li><strong>Política de Tratamiento de Datos Personales </strong>documento que define las reglas de recolección, uso y protección de la información conforme a la Ley 1581 de 2012 y el Decreto 1074 de 2015.</li>
+        </ul>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">3. Condiciones de Acceso y Registro </h2>
+        <p class="text-gray-700 mb-4">
+            El acceso a la información general y a los contenidos informativos de la Plataforma SITRAM es libre y no exige registro previo. No obstante, para utilizar los servicios de trazabilidad tales como el registro de compra de minerales ante la PTM, la consulta y administración de saldos de minerales (si aplica), el acceso a expedientes o la gestión contractual el Usuario deberá crear una cuenta en la Plataforma, aportando información veraz, completa y actualizada, incluyendo datos de identificación, contacto y rol en la cadena de valor minera. El Usuario será el único responsable de la custodia de sus credenciales de acceso y de todas las operaciones realizadas bajo su cuenta. Cualquier uso no autorizado o sospecha de vulneración de seguridad deberá ser notificada de inmediato a SITRAM, quien implementará los protocolos de bloqueo y recuperación de cuenta establecidos en sus procedimientos internos.
+        </p>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">4. Descripción de los Servicios</h2>
+        <p class="text-gray-700 mb-4">
+            SITRAM pone a disposición de los Usuarios múltiples módulos y funcionalidades diseñados para la gestión integral de la trazabilidad de minerales:
+        </p>
+        <ul class="list-decimal list-inside text-gray-700 mb-4">
+            <li>el módulo de transacciones en el que puede registrar ante la PTM compras de minerales, transformaciones, reversiones y cierres de cadena por consumo final</li>
+            <li>el módulo de consulta y administración de transacciones de minerales (compras, transformaciones, reversiones, cierre por consumo final)</li>
+            <li>el repositorio documental, donde se almacenan y consultan documentos legales, técnicos y operativos</li>
+            <li> la interoperabilidad mediante diferentes plataformas o ERPs corporativos</li>
+            <li>el canal de Peticiones, Quejas y Reclamos (PQR) para la atención de derechos ARCO</li>
+            <li>los servicios de soporte técnico, capacitación en línea y mantenimiento preventivo y correctivo de la Plataforma.</li>
+        </ul>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">5. Obligaciones del Usuario </h2>
+        <p class="text-gray-700 mb-4">
+            <ul class="list-decimal list-inside text-gray-700 mb-4">
+                <li>El Usuario se obliga a utilizar la Plataforma SITRAM de conformidad con la ley, con estos Términos y con las políticas internas de seguridad y protección de datos.</li>
+                <li>En particular, debe ingresar información veraz, completa y actualizada</li>
+                <li>abstenerse de vulnerar la seguridad de los sistemas o emplear herramientas automatizadas no autorizadas</li>
+                <li>respetar las licencias de uso de software, bases de datos y contenidos</li>
+                <li>no compartir sus credenciales con terceros</li>
+                <li>notificar de inmediato cualquier anomalía, incidente de seguridad o cambio relevante en su información personal</li>
+                <li>responderá por los actos de sus representantes y apoderados, garantizando que éstos observen las mismas obligaciones</li>
+            </ul>
+        </p>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">6. Obligaciones de SITRAM</h2>
+        <p class="text-gray-700 mb-4">
+            <ul class="list-decimal list-inside text-gray-700 mb-4">
+                <li>SITRAM se compromete a prestar los Servicios con la diligencia propia de un Operador Tecnológico de Trazabilidad Minera, garantizando una disponibilidad mínima del noventa y nueve por ciento (99 %) mensual, salvo interrupciones por mantenimiento programado o casos de fuerza mayor. </li>
+                <li>Implementará y mantendrá vigentes medidas de seguridad técnicas, organizacionales y humanas, entre las que se incluyen cifrado de la información en tránsito y en reposo, autenticación multifactor, copias de seguridad periódicas y pruebas de penetración (hacking ético),</li>
+                <li>Así como la suscripción de contratos con proveedores de infraestructura y encargados del tratamiento que garanticen la misma protección de los datos. Igualmente, brindará soporte técnico y capacitación en los tiempos y modalidades pactadas,</li>
+                <li>gestionará de manera oportuna las solicitudes recibidas por el canal PQR y mantendrá actualizada la documentación y la Política de Tratamiento de Datos Personales.</li>
+            </ul>
+        </p>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">7. Política de Tratamiento de Datos Personales </h2>
+        <p class="text-gray-700 mb-4">
+            SITRAM, en su calidad de Responsable del Tratamiento, cumple con la Ley 1581 de 2012, el Decreto Único Reglamentario 1074 de 2015 y demás normas de protección de datos. Al registrarse o interactuar con la Plataforma, el Usuario otorga su consentimiento expreso e informado para la recolección, almacenamiento, uso, consulta, transferencia y supresión de sus datos, exclusivamente para las finalidades descritas en la <a href="Pprivacidad.html">Política de Privacidad y Tratamiento de Datos Personales</a>. Dichas finalidades incluyen la gestión de CUO, saldos, expedientes, contratos, generación de reportes, interoperabilidad, análisis estadístico y la toma de fotografías con consentimiento verbal, a efectos ilustrativos y sin ánimo de lucro. El Usuario podrá ejercer sus derechos de (Acceso, Rectificación, Actualización, Supresión, Limitación y Oposición) mediante solicitud al correo <strong>privacidad@trazabilidadminerales.com</strong>, la cual será atendida en un plazo máximo de quince (15) días hábiles. Si el Usuario pretende revocar su autorización o solicitar la eliminación de un dato, SITRAM procederá a retirar la información de sus sistemas en un término no superior a cinco (5) días hábiles.
+        </p>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">8. Uso de Cookies </h2>
+        <p class="text-gray-700 mb-4">
+            Con el fin de optimizar la experiencia de navegación y analizar el tráfico del Sitio, SITRAM utiliza cookies propias y de terceros que recopilan información sobre la sesión del Usuario, las páginas visitadas y las preferencias de idioma y dispositivo. El Usuario puede configurar su navegador para aceptar, rechazar o eliminar cookies, advirtiéndose que la desactivación de ciertas cookies puede limitar la funcionalidad de algunos servicios de la Plataforma o la página web. Para más detalles, consulte la Política de Cookies publicada en el portal.
+        </p>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">9. Propiedad Intelectual</h2>
+        <p class="text-gray-700 mb-4">
+            Todos los derechos de propiedad intelectual e industrial sobre el software, las bases de datos, el diseño gráfico, los textos, las imágenes, los logotipos y demás contenidos de la Plataforma SITRAM pertenecen a Sistemas Informáticos Y Servicios Integrados (SiySi ltda) o a terceros que han otorgado las licencias correspondientes. El Usuario recibe una licencia limitada, revocable, no exclusiva e intransferible para hacer uso interno de dichos elementos, quedando terminantemente prohibida su reproducción, distribución, comunicación pública, transformación, modificación o cualquier explotación no autorizada.
+        </p>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">10. Limitación de Responsabilidad</h2>
+        <p class="text-gray-700 mb-4">
+            SITRAM no garantiza la continuidad absoluta del servicio ni la infalibilidad técnica del Sitio, eximiéndose de responsabilidad por interrupciones derivadas de fallas en la red de comunicaciones, actos de terceros, eventos de fuerza mayor o casos fortuitos. Asimismo, no será responsable por daños indirectos, lucro cesante, pérdida de datos, ni perjuicios derivados del acceso no autorizado por parte del Usuario o del incumplimiento de sus obligaciones.
+        </p>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">11. Modificación de los Términos</h2>
+        <p class="text-gray-700 mb-4">
+            SITRAM podrá modificar estos Términos en cualquier momento, publicando la versión actualizada en el Sitio web con la indicación de la “Última actualización”. El uso continuado de la Plataforma SITRAM después de dicha publicación implicará la aceptación de las modificaciones.
+        </p>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">12. Terminación y Suspensión </h2>
+        <p class="text-gray-700 mb-4">
+            SITRAM se reserva el derecho de suspender temporal o cancelar definitivamente la cuenta de cualquier Usuario que incumpla estos Términos, previa notificación por los canales habilitados, sin perjuicio de ejercer las acciones legales que correspondan y de conservar la información necesaria para atender reclamaciones o cumplir obligaciones legales.
+        </p>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">13. Confidencialidad</h2>
+        <p class="text-gray-700 mb-4">
+            Tanto SITRAM como el Usuario se obligan a mantener en estricta reserva toda la información confidencial a la que accedan en virtud de la prestación y utilización de los servicios de la Plataforma, incluyendo, sin limitarse a, datos comerciales, técnicos, estratégicos y operativos relacionados con la trazabilidad minera. Se entenderá por “Información Confidencial” aquella que haya sido designada como tal por la parte que la revele o que, por su naturaleza, deba tratarse con reserva. Ni SITRAM ni el Usuario podrán divulgar, revelar, reproducir o utilizar dicha Información Confidencial con fines distintos a los expresamente autorizados en estos Términos, salvo con autorización previa y por escrito de la parte reveladora o en cumplimiento de una obligación legal o mandato judicial. Esta obligación de confidencialidad subsistirá aun después de la terminación de la relación contractual y el cierre de la cuenta de Usuario.
+        </p>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">14. Legislación Aplicable y Jurisdicción </h2>
+        <p class="text-gray-700 mb-4">
+            Estos Términos se rigen por las leyes de la República de Colombia, en especial la Constitución Política, la Ley 1581 de 2012 y su reglamentación. Para la solución de controversias, las partes se someten a los jueces y tribunales competentes de la ciudad de Medellín., renunciando a cualquier otro fuero.
+        </p>
+        </section>
+
+<section class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">15. Contacto</h2>
+        <p class="text-gray-700 mb-4">
+            Para aclaraciones, solicitudes, PQRS o reclamos, el Usuario podrá comunicarse con el Oficial de Privacidad de SITRAM a través del correo <strong>privacidad@trazabilidadminerales.com</strong>, o al teléfono +57 XXX XXX XXXX.
+        </p>
+        </section>
+
+
+
+ <footer class="bg-[var(--verde-900)] text-[var(--gris-200)] py-10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-4 flex flex-col items-center">
+                 <img src="images/sitram neutro.png" alt="Logo SITRAM Footer" class="h-20 w-auto mb-2">
+                 <p class="text-sm text-[var(--verde-100)] mt-1">Operador Tecnológico de Trazabilidad Minera (OTTM)</p>
+            </div>
+            <div class="mb-4 space-x-4">
+                <a href="Pprivacidad.html" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Política de Privacidad</a>
+                <span class="text-[var(--verde-500)]">|</span> 
+                <a href="Terminosycondiciones.html" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Términos de Servicio</a>
+                <span class="text-[var(--verde-500)]">|</span>
+                <a href="PoliticaCookies.html" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Política de Cookies</a>
+                <p>
+                <a href="mailto:siysiottm@gmail.com" class="text-[var(--gris-200)] hover:text-[var(--blanco)]">Contacto SITRAM</a></p>
+            </div>
+            <p class="text-sm text-[var(--gris-500)]">&copy; 2025 SITRAM Colombia. Software de Trazabilidad de Minerales. Todos los derechos reservados.</p>
+             <p class="text-xs text-[var(--gris-700)] mt-2">Autorizado por la Agencia Nacional de Minería (ANM) como OTTM.</p>
+        </div>
+    </footer>
+
+    
+<a href="https://wa.me/+573006470220" target="_blank" class="whatsapp-button">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2048px-WhatsApp.svg.png" alt="WhatsApp" width="50" height="50">
+</a>
+<script src="javas.js"></script>
+</body>
+</html>
+
+

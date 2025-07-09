@@ -63,59 +63,126 @@ h4 { font-size: 1.25rem; } /* ~20px */
     z-index: 1000;
 }
 
-/* menu hiden */
-
-
-#mobile-menu-items {
-    position: absolute; /* Asegura que no interfiera con otros elementos */
-    top: 100%; /* Coloca el menú debajo del botón */
-    left: 0;
-    width: 100%;
-    background-color: var(--blanco);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    overflow: hidden;
-    max-height: 0; /* Inicialmente oculto */
-    transition: max-height 0.3s ease-in-out; /* Animación suave */
-    display: none; /* Importante: Oculta el menú inicialmente */
+p a {
+  font-weight: bold;
+  color: #28a745; /* o el color base que prefieras */
+  transition: color 0.3s ease-in-out;
 }
 
-#mobile-menu-items.hidden {
-    display: none; /* Asegura que esté oculto */
+p a:hover {
+  color: var(--verde-800); /* o el color al pasar el puntero */
 }
 
-#mobile-menu-items.open {
-    display: block; /* Muestra el menú */
-    max-height: 600px; /* Altura máxima del menú */
+
+/* Banner de cookies */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #16403a;
+  color: #ffffff;
+  padding: 20px;
+  z-index: 9999;
+  font-size: 14px;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.open-icon {
-    display: block; /* Muestra el icono de hamburguesa */
+.cookie-content {
+  max-width: 800px;
+  text-align: center;
 }
 
-.close-icon {
-    display: none; /* Oculta el icono de cerrar */
+.cookie-buttons {
+  margin-top: 15px;
 }
 
-.close-icon.active {
-    display: block; /* Muestra el icono de cerrar cuando está activo */
+.cookie-buttons .btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-/* Media Query para móvil (importante) */
-@media (max-width: 767px) {
-    #mobile-menu-items {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--blanco);
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        border-bottom-left-radius: 0.5rem;
-        border-bottom-right-radius: 0.5rem;
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.3s ease-in-out;
-        display: none; /* Oculta el menú inicialmente */
-    }
+.btn-accept {
+  background-color: #28a745;
+  color: #fff;
 }
+
+.btn-accept:hover {
+  background-color: #218838;
+}
+
+.btn-reject {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-reject:hover {
+  background-color: #5a6268;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Contact Form */
+
+.input-form {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-form:focus {
+  border-color: var(--verde-600);
+  box-shadow: 0 0 0 3px rgba(34, 122, 108, 0.2);
+}
+
+.mensaje-exito {
+  background-color: #e6f4ea;
+  color: #16403a;
+  border: 1px solid #b4e0cb;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.mensaje-exito.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mensaje-exito button {
+  margin-top: 1rem;
+  background-color: #227a6c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.mensaje-exito button:hover {
+  background-color: #16403a;
+}
+
+.hidden {
+  display: none;
+}
+
